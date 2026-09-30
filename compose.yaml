@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: pm_copilot
+      POSTGRES_USER: pm_copilot
+      POSTGRES_PASSWORD: pm_copilot
+    ports:
+      - "5432:5432"
+    volumes:
+      - pm_copilot_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pm_copilot -d pm_copilot"]
+      interval: 2s
+      timeout: 2s
+      retries: 15
+
+volumes:
+  pm_copilot_data:

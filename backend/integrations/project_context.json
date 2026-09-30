@@ -1,0 +1,22 @@
+{
+  "active_course": "ds701",
+  "courses": {
+    "ds701": {
+      "code": "DS701",
+      "slack": {
+        "general_channels": ["i-fa26-ds701-pm-tpm"],
+        "projects": {
+          "WGBH Municipal Lawsuits": {
+            "channels": ["i-fa26-ds701-wgbh-municipal-lawsuits"]
+          },
+          "Humanitarian AI Today": {
+            "channels": ["i-fa26-ds701-humanitarian-ai-iati"]
+          },
+          "BCAN Boston Heating": {
+            "channels": ["i-fa26-ds701-bcan-heating"]
+          }
+        }
+      }
+    }
+  }
+}
